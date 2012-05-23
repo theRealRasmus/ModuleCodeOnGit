@@ -1,0 +1,14 @@
+<?php
+/** 
+ *Implements hook_menu().  
+ */
+
+function module5_menu(){
+    $items['hej-page']=  array(
+        'page callback' => 'hej_page', 'access arguments'
+        => array('access content'), 'type' => MENU_CALLBACK,);
+return $items;}
+
+function module5_page(){
+return"hello world";
+}
